@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <conio.h>
+#include <stdio.h>
 int main()
 {
 int Max[10][10], need[10][10], alloc[10][10], avail[10], completed[10], safeSequence[10];
@@ -85,5 +84,5 @@ printf(">\n");
 }
 else
 printf("\nThe system is in an unsafe state!!");
-getch();
+return 0;
 }
