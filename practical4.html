@@ -1,0 +1,29 @@
+<html>
+<body>
+  <h2>Email Validator</h2>
+
+  <label for="email">Enter Email:</label>
+  <input type="text" id="email" placeholder="example@mail.com">
+  <button onclick="validateEmail()">Check Email</button>
+
+  <div id="result"></div>
+
+  <script>
+    function validateEmail() {
+      const email = document.getElementById("email").value;
+      const resultLabel = document.getElementById("result");
+
+      // Regular Expression for email validation
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+      if (emailPattern.test(email)) {
+        resultLabel.textContent =email + " Email is valid";
+    
+      } else {
+        resultLabel.textContent =email + "  Email is invalid";
+     
+      }
+    }
+  </script>
+</body>
+</html>
